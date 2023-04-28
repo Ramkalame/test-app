@@ -1,0 +1,46 @@
+<nav
+  class="navbar navbar-expand-md bg-primary navbar-dark shadow p-3 mb-3 bg-body-tertiary"
+>
+  <div class="container-fluid">
+   
+    <a href="#" class="navbar-brand"><b class="text-dark">CIPBRL</b></a>
+    
+    
+      <div >
+        <ng-content></ng-content>
+      </div>
+     
+
+    <form class="home_form shadow">
+      <input
+        type="text"
+       
+        placeholder="Search book"
+      />
+      <button class="btn btn-primary" type="submit">
+        <img src="./assets/search3.png"/>
+      </button>
+    </form>
+
+<div class="login d-flex">
+  <div [ngSwitch]="navChange" >
+    <div *ngSwitchCase="'loggedin'">
+      <button class="btn btn-outline-light m-2" id="account" >
+        <a routerLink="/sign-in-up">Account</a>
+      </button>
+    </div>
+
+    <div *ngSwitchCase="'loggedout'">
+      <button class="btn btn-outline-light m-2" (click)="logOut()">
+        <a routerLink="">Log Out</a>
+      </button>
+    </div>
+  </div>
+
+  <button class="btn btn-outline-warning m-2" id="profile">
+    <a routerLink="/user">Profile</a>
+  </button>
+</div>
+
+  </div>
+</nav>

@@ -1,0 +1,15 @@
+img{
+    width: 150px;
+    height: 150px;
+    
+}
+.btn{
+    margin-right: 10px;
+}
+hr{
+    position: relative;
+    border: none;
+    height: 3px;
+    background: black;
+    margin-bottom: 3px;
+}

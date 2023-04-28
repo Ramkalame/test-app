@@ -1,0 +1,45 @@
+ <div class="container">
+    <div class="row">
+        <div class="col-sm-4 bg-info rounded mb-3">
+            <div class="text-center ">
+                    <img src="./assets/profile.png" alt="" class="p-3">
+            </div>
+            <div class=" card p-2 mb-2">
+    
+                <h3 *ngIf="resData" class="card-title"> Name: {{resData.name}}</h3>
+                <h3 *ngIf="resData" class="card-title">Contact: {{resData.contact}}</h3>
+                <h3 *ngIf="resData" class="card-text">Address: {{resData.address}}</h3>
+            </div>
+            <button class="btn btn-success mt-2 mb-3 me-3" type="submit" >Update</button>
+            <button class="btn btn-danger mt-2 mb-3 ">Delete</button>
+            <button class="btn btn-warning mt-2 mb-3">Log Out</button>
+
+        </div>
+        <div class="col-sm-7 bg-light rounded mb-3 ms-2 p-3">
+            <h2>Bookshelf</h2><hr>
+            <div class="alert alert-success">
+                <!-- <p *ngIf="bookshelfdata">{{bookshelfdata}}</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <table class="table table-borderless">
+                <thead>
+                    <tr>
+                    <th>Isbn</th>
+                    <th>Name</th>
+                    <th>Library</th>
+                    <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>451268</td>
+                    <td>Book Name</td>
+                    <td>Library Name</td>
+                    <td>Pending</td>
+                </tbody>
+
+            </table>
+

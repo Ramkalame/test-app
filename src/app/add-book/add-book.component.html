@@ -1,0 +1,44 @@
+                            <!--Start of form-->
+                            <div class="row bg-light m-4  justify-content-center text-center">
+                                <form [formGroup]="addbookForm" (ngSubmit)="onSubmit()">
+                                <div class="input-group mb-3 mt-2">
+                                    <span class="input-group-text" >Book number</span>
+                                    <input type="text" formControlName="isbn" class="form-control" placeholder="Enter Book number">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" >Book  Name</span>
+                                    <input type="text" formControlName="name" class="form-control" placeholder="Enter Book Name">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" >Author Name</span>
+                                    <input type="text" formControlName="author" class="form-control" placeholder="Enter Author Name">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" >Description</span>
+                                    <input type="text" formControlName="description" class="form-control" placeholder="Enter book description">
+                                </div>
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text">Category</span>
+                                    <input type="text" formControlName="category" class="form-control" placeholder="enter category">
+                                    <!-- <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Art/Architecure</option>
+                                    <option value="2">Autobiography</option>
+                                    <option value="3">Biography</option>
+                                    <option value="4">Bussiness/Economics</option>
+                                    <option value="5">Dictionary</option>
+                                    <option value="6">Encyclopedia</option>
+                                    </select> -->
+                                </div>
+                                <!-- <div class="input-group mb-2 ">
+                                    <span class="input-group-text" >Rent Price</span>
+                                    <input type="number" class="form-control" placeholder="Enter Rent Price">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+                                </div> -->
+                            
+                                <div class="mb-1">
+                                    <button mat-raised-button color="warn" type="submit">Submit Details</button>                               
+                                </div>
+                            </form>
+                            </div>
+                            <!--End of form-->

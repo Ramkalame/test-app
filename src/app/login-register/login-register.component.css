@@ -1,0 +1,8 @@
+.card{
+    height: 500px;
+    width: 700px;
+}
+.card-title{
+    font-family: monospace;
+    letter-spacing: 1px;
+}

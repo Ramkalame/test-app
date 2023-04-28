@@ -1,0 +1,24 @@
+
+<div class="container-fluid text-center">
+    <div class="row p-3">
+      <div class="col " *ngFor="let item of booklist">
+      <div class="card mb-3 shadow " style="max-width: 570px;">
+        <div class="row ">
+          <div class="col-5">
+            <!-- <img src={{item.imgurl}} class="img-fluid rounded-start cover-img" alt="book cover"> -->
+            <img src={{item.imgurl}} class="img-fluid rounded-start cover-img" alt="book cover">
+          </div>
+          <div class="col-7">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Name:{{item.name}}</h5>
+              <p class="card-text">{{item.author}}</p>
+              <span class="badge bg-info mb-2 p-1">Availablitiy</span><br>
+              <a class="btn btn-primary rounded-pill" [routerLink]="['/book', item.isbn]">Rent</a>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    
+  </div>
+  </div>

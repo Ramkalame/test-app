@@ -1,0 +1,22 @@
+<table class="table ">
+    <thead>
+      <tr class="bg-light">
+        <th>S.No.</th>
+        <th>Book Id</th>
+        <th>Book Name</th>
+        <th>Author Name</th>
+        <th>Update Button</th>
+        <th>Delete Button</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of resData">
+        <td>1</td>
+        <td>{{item.isbn}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.author}}</td>
+        <td><button mat-raised-button color="primary">Update</button></td>
+        <td><button mat-raised-button color="warn" (click)="deletebook(item.isbn)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>

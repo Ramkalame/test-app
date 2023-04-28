@@ -1,0 +1,12 @@
+.card{
+    height: 210px;
+    width: 400px;
+}
+.cover-img{
+    height: 210px;
+    width: 160px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

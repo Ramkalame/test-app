@@ -1,0 +1,74 @@
+
+
+.navbar-brand {
+  font-family: Stencil;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+.home_form{
+  margin-left: 70px;
+  margin-right: auto;
+}
+
+.container-fluid .btn #profile {
+
+  margin-left: 10px;
+  flex: 1;
+}
+
+.home_form {
+  width: fit-content;
+  padding: 4px 20px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-right: inherit;
+  
+}
+
+.home_form input {
+  font-size: 16px;
+  border: 0;
+  flex: 1;
+  outline: none !important;
+  background: none;
+  color: grey;
+  padding-right: none;
+  width: 300px;
+}
+
+.home_form input::placeholder {
+  font-size: 14px;
+}
+
+.home_form button {
+  border-color: grey;
+  border-radius: 60px;
+
+  border: none;
+
+}
+
+.home_form button img {
+  width: 25px;
+  height: 27px;
+  color: #fff;
+  padding: 2px;
+}
+
+.navbar .login a img{
+  height: 15px;
+  width: 15px;
+  /* padding-right: 15px; */
+}
