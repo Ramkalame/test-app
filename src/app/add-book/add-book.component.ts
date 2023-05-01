@@ -41,8 +41,8 @@ export class AddBookComponent implements OnInit{
     var body:any;
     body={
       
-        "userid": sessionStorage.getItem('userid'),
-        "password": sessionStorage.getItem('password'),
+        // "userid": sessionStorage.getItem('userid'),
+        // "password": sessionStorage.getItem('password'),
         "isbn": this.addbookForm.value.isbn,
         "name": this.addbookForm.value.name,
         "author": this.addbookForm.value.author,

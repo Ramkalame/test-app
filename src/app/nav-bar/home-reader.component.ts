@@ -29,7 +29,7 @@ export class HomeReaderComponent {
   }
   ngOnInit(): void{
 
-    this.categoryList();
+    // this.categoryList();
   
           this.route.events.pipe(
             filter((val) => val instanceof NavigationStart)).subscribe((val:any)=>{

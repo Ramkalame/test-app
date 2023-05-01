@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
     this.getBookList();
 
   }
+ 
 
   getBookList() {
     const url = 'http://localhost:2001/getbooklist'
@@ -35,11 +36,16 @@ export class HomeComponent implements OnInit {
     })
   }
 
+
+  
+
+
   
 
   
   
 }
+
 
 
 

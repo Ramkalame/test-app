@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeReaderComponent } from '../nav-bar/home-reader.component';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-category',
@@ -18,11 +19,11 @@ export class CategoryComponent implements OnInit{
   handleClick(){
 
     this.homeReaderComponent.categoryComponent=this;
+    
   }
   getItemValue(event: MouseEvent) {
     const target = event.target as HTMLElement;
     const item = target.textContent?.trim();
     this.homeReaderComponent.getCategory(item);
   }
-
 }

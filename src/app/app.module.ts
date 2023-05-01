@@ -28,6 +28,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CategoryComponent } from './category/category.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -51,6 +52,7 @@ import { CategoryComponent } from './category/category.component';
     AddBookComponent,
     CategoryComponent,
     
+    
   
   ],
   imports: [
@@ -66,7 +68,8 @@ import { CategoryComponent } from './category/category.component';
     MatInputModule,
     MatRadioModule,
     MatButtonModule,
-    NgbModule
+    NgbModule,
+    RouterModule,
   
     
    
